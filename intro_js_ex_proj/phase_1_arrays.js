@@ -31,3 +31,35 @@ Array.prototype.twoSum = function () {
 
 console.log(b.twoSum())
 
+
+
+let c = [[1,4,6],
+    [8,3,5]]
+                             
+// let cTransposed = [[1, 8], [4, 3], [6, 5]]
+
+Array.prototype.transpose = function() {
+    let transpArr = []
+    const transpArrRowsNum = this[0].length - 1
+    const transpArrColsNum = this.length - 1
+
+    for (let transpRow = 0; transpRow <= transpArrRowsNum; transpRow++) { //0,1,2
+        newRow = []
+        for (let transpCol = 0; transpCol < transpArrColsNum; transpCol++) { //0,1
+            debugger
+            row.push(this[transpCol][transpRow])
+            row.push(this[transpCol+1][transpRow])
+       }
+        transpArr.push(newRow)
+    }
+
+    return transpArr;
+}
+
+console.log(c.transpose())
+
+
+// PHASE TWO
+
+
+
