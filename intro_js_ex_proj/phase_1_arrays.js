@@ -46,9 +46,8 @@ Array.prototype.transpose = function() {
     for (let transpRow = 0; transpRow <= transpArrRowsNum; transpRow++) { //0,1,2
         newRow = []
         for (let transpCol = 0; transpCol < transpArrColsNum; transpCol++) { //0,1
-            debugger
-            row.push(this[transpCol][transpRow])
-            row.push(this[transpCol+1][transpRow])
+            newRow.push(this[transpCol][transpRow])
+            newRow.push(this[transpCol+1][transpRow])
        }
         transpArr.push(newRow)
     }
@@ -58,8 +57,6 @@ Array.prototype.transpose = function() {
 
 console.log(c.transpose())
 
-
-// PHASE TWO
 
 
 
